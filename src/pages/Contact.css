@@ -1,62 +1,77 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 .formmainDiv {
-    padding: 2rem;
-    /* background: #f7f9fc; */
-    text-align: center;
-    border-radius: 10px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-    max-width: 600px;
-    margin: 2rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #1f242d;
+    padding: 20px;
+    color: #fff;
 }
 
 .form {
-    display: flex;
-    flex-direction: column;
-    gap: 1.2rem;
+    width: 100%;
+    max-width: 500px;
+    background: #292e38;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 .form label {
-    font-weight: bold;
-    color: #333;
-    text-align: left;
-    margin-bottom: 0.5rem;
     display: block;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #7cf03d;
 }
 
-.form input,
+.form input[type="text"],
+.form input[type="email"],
+.form input[type="tel"],
 .form textarea {
-    padding: 0.8rem;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    font-size: 1rem;
+    background: #1f242d;
+    color: #fff;
+    font-size: 16px;
     outline: none;
     transition: border 0.3s ease;
-    width: 100%;
 }
 
 .form input:focus,
 .form textarea:focus {
-    border-color: #4a90e2;
+    border-color: #7cf03d;
 }
 
 .form textarea {
     resize: none;
-    min-height: 120px;
+    height: 100px;
 }
 
 .form input[type="submit"] {
-    padding: 0.8rem 1.5rem;
-    background-color: #4a90e2;
-    color: white;
+    width: 100%;
+    padding: 10px;
+    background: #7cf03d;
     border: none;
     border-radius: 5px;
-    font-size: 1rem;
+    font-size: 16px;
+    color: #1f242d;
     font-weight: bold;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background 0.3s ease;
 }
 
 .form input[type="submit"]:hover {
-    background-color: #0056a8;
+    background: #5fbf2b;
 }
 
 .mainDivChilde1 {
@@ -64,33 +79,34 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: white;
-    padding: 2rem;
+    background: #fff;
+    padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     z-index: 1000;
     text-align: center;
-    max-width: 400px;
-    width: 90%;
 }
 
 .mainDivChilde1 p {
-    font-size: 1rem;
-    margin-bottom: 1rem;
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #333;
 }
 
 .mainDivChilde1 button {
-    padding: 0.8rem 1rem;
-    background-color: #dc3545;
-    color: white;
+    padding: 10px 20px;
+    background: #7cf03d;
     border: none;
     border-radius: 5px;
+    font-size: 16px;
+    color: #1f242d;
+    font-weight: bold;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background 0.3s ease;
 }
 
 .mainDivChilde1 button:hover {
-    background-color: #a71d2a;
+    background: #5fbf2b;
 }
 
 .mainDivChilde2 {
@@ -101,34 +117,4 @@
     height: 100%;
     background: rgba(0, 0, 0, 0.5);
     z-index: 999;
-}
-
-@media (max-width: 768px) {
-    .formmainDiv {
-        padding: 1.5rem;
-        margin: 1rem;
-    }
-
-    .form label {
-        font-size: 0.9rem;
-    }
-
-    .form input,
-    .form textarea {
-        font-size: 0.9rem;
-    }
-
-    .form input[type="submit"] {
-        font-size: 0.9rem;
-        padding: 0.6rem 1.2rem;
-    }
-
-    .mainDivChilde1 {
-        padding: 1.5rem;
-    }
-
-    .mainDivChilde1 button {
-        font-size: 0.9rem;
-        padding: 0.6rem 1rem;
-    }
 }
