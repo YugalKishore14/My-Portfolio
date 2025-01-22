@@ -160,6 +160,7 @@
 }
 
 @media (max-width: 768px) {
+
     .home-info h1 {
         font-size: 35px;
     }
@@ -186,6 +187,10 @@
 @media (max-width: 480px) {
     .home {
         padding: 20px;
+    }
+
+    .home-img {
+        padding-top: 10%;
     }
 
     .home-info h1 {
