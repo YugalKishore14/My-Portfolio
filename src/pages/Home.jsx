@@ -7,7 +7,7 @@ import { FaLinkedin } from "react-icons/fa";
 
 const Home = () => {
     const object = {
-        name: "Hi I'm Yugal Dhiman",
+        name: "Hi I'm Yugal Kishor",
         hadding: "Frontend Developer based in India.",
         paragraph:
             "I'm a Frontend developer from Noida, India, and a fresher frontend developer. Currently, I’m undergoing comprehensive training in MERN Stack Development at Ducat India Institute, where I’m learning to build robust, dynamic, and scalable web applications.",
