@@ -4,13 +4,17 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1f242d;
+    color: #fff;
+}
+
 .aboutMainBox {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: #1f242d;
-    color: #fff;
     padding: 60px 10%;
 }
 
@@ -21,6 +25,13 @@
     border-radius: 10px;
     padding: 30px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.aboutBox h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #7cf03d;
 }
 
 .aboutTextBox p {
@@ -33,11 +44,6 @@
 .aboutTextBox span {
     font-weight: bold;
     color: #7cf03d;
-}
-
-.aboutTextBox p span {
-    color: #7cf03d;
-    font-size: 18px;
 }
 
 .bttn {
@@ -59,4 +65,42 @@
     background: transparent;
     color: #7cf03d;
     box-shadow: none;
+}
+
+@media screen and (max-width: 768px) {
+    .aboutMainBox {
+        padding: 40px 5%;
+    }
+
+    .aboutBox {
+        padding: 20px;
+    }
+
+    .aboutTextBox p {
+        font-size: 16px;
+        line-height: 1.4;
+    }
+
+    .aboutBox h1 {
+        font-size: 28px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .aboutMainBox {
+        padding: 30px 5%;
+    }
+
+    .aboutBox {
+        padding: 15px;
+    }
+
+    .aboutTextBox p {
+        font-size: 14px;
+        line-height: 1.3;
+    }
+
+    .aboutBox h1 {
+        font-size: 24px;
+    }
 }

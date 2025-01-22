@@ -17,6 +17,7 @@ const About = () => {
         <>
             <div className="aboutMainBox">
                 <div className="aboutBox">
+                    <h1>About Us</h1>
                     <div className="aboutTextBox">
                         <p>{Box.description1}</p>
                         <p>{Box.description2}</p>
