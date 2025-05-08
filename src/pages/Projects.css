@@ -1,5 +1,5 @@
 .mainBox {
-    height: auto;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -53,6 +53,7 @@ p span {
     .mainBox {
         display: block;
         padding: 20px;
+        height: auto;
     }
 
     .forBox {
