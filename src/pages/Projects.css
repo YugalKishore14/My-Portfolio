@@ -1,5 +1,5 @@
 .mainBox {
-    height: 100vh;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -45,4 +45,18 @@ p {
 p span {
     color: #7cf03d;
     font-weight: bold;
+}
+
+
+
+@media (max-width: 768px) {
+    .mainBox {
+        display: block;
+        padding: 20px;
+    }
+
+    .forBox {
+        margin-top: 15%;
+        height: 60vh;
+    }
 }
