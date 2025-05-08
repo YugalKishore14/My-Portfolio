@@ -1,16 +1,16 @@
 import React from "react";
 import "./Home.css";
 import pic from "../assets/myPic3.png";
-import resume from '../assets/Resume .pdf'
+import resume from '../assets/YugalResume.pdf'
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 
 const Home = () => {
     const object = {
-        name: "Hi I'm Yugal Kishor",
+        name: "Hi I'm Yugal Kishore",
         hadding: "Frontend Developer based in India.",
         paragraph:
-            "I'm a Frontend developer from Noida, India, and a fresher frontend developer. Currently, I’m undergoing comprehensive training in MERN Stack Development at Ducat India Institute, where I’m learning to build robust, dynamic, and scalable web applications.",
+            "I'm a Frontend developer from Ghaziabad, India, and a fresher frontend developer. Currently, I’m undergoing comprehensive training in MERN Stack Development at Ducat India Institute, where I’m learning to build robust, dynamic, and scalable web applications.",
     };
 
     return (
@@ -25,7 +25,7 @@ const Home = () => {
                         Download CV
                     </a>
                     <div className="sci">
-                        <a href="https://github.com/yugaldhiman" target="_blank" rel="noopener noreferrer">
+                        <a href="https://github.com/YugalKishore14" target="_blank" rel="noopener noreferrer">
                             <FaGithub />
                         </a>
                         <a href="https://linkedin.com/in/yugaldhiman" target="_blank" rel="noopener noreferrer">
